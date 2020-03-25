@@ -16,6 +16,10 @@ button {
   color: #e5e5e5;
 }
 
+.hide {
+  display: none;
+}
+
 #footer a {
   color: #25282b;
   text-decoration: none;
