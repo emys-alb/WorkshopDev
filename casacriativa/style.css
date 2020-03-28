@@ -62,7 +62,7 @@ button {
   font-size: 14px;
   font-weight: bold;
   line-height: 18px;
-  letter-spacing: 0.1;
+  letter-spacing: 0.2px;
 
   cursor: pointer;
 
@@ -91,15 +91,28 @@ button.fat:hover {
 
 footer {
   text-align: center;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+
+  color: #777;
+}
+
+footer a {
+  opacity: 0.7;
 }
 
 
 .idea {
   display: flex;
+
   background-color: white;
   border-radius: 8px;
-  box-shadow: 0 4px 16px --8px rgba(1,1,1,0.2);
-  padding: 20px;
+  box-shadow: 0 4px 16px -8px rgba(1,1,1,0.2);
+  
+  padding: 32px;
 
   margin-bottom: 32px;
 }
@@ -122,4 +135,103 @@ footer {
 
 .idea description {
   margin: 16px 0;
+}
+
+
+/* modal */
+
+#modal {
+  background: #ff5e84;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+
+}
+
+#modal .content {
+  margin-top: 128px;
+
+  color: white;
+}
+
+#modal .content h1{
+  text-align: center;
+
+  text-transform: uppercase;
+}
+
+.content form {
+  width: 80%;
+  max-width: 800px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+
+}
+
+.content form div:nth-child(3), 
+.content form div:nth-child(4), 
+.content form div:nth-child(5) 
+{
+  grid-column: span 2;
+}
+
+form input {
+ 
+  border-radius: 6px;
+  border: 1px solid rgba(141,25,52,0.5);
+
+  outline: none;
+
+  font-size: 16px;
+}
+
+form input, form textarea {
+  width: 100%;
+
+  padding: 12px;
+
+  box-sizing: border-box;
+}
+
+form label {
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.8px;
+
+}
+
+form button {
+  background: white;
+
+  width: 150px;
+  height: 40px;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  margin-top: 32px;
+
+  grid-column: 2;
+}
+
+form button:hover {
+  background-color: #0984e3;
+  color: white;
+
+  text-decoration: none;
 }
