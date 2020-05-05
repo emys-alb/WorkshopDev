@@ -27,7 +27,7 @@
           Comece clicando em ver ideias para ver as ideias cadastrada contribua adicioando a sua ideia.
         </p>
         <section id="buttons">
-          <button>+ Adicionar Ideia </button>
+          <button onclick="onOff()">+ Adicionar Ideia </button>
           <button class="fat"> Ver Ideias</button>
         </section>
         <footer>
@@ -74,7 +74,7 @@
   </div>
 
   <!-- Modal -->
-  <div id="modal">
+  <div id="modal" class="hide">
     <div class="content">
       <h1>Nova Ideia</h1>
 
@@ -107,6 +107,7 @@
           <input type="url" name="link">
         </div>
 
+        <a href="#" onclick="onOff()">Voltar</a>
         <button>Salvar</button>
 
       </form>
