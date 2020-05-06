@@ -80,6 +80,7 @@ main {
   justify-content: space-evenly;
 
   margin-bottom: 32px;
+  font-size: 14px;
 }
 
 button {
@@ -160,9 +161,6 @@ footer a {
   left: 0;
   right: 0;
 
-  width: 100vw;
-  height: 100vw;
-
   display: flex;
   justify-content: center;
 
@@ -175,8 +173,7 @@ footer a {
 }
 
 #modal .content {
-  margin-top: 15%;
-  justify-content: center;
+  margin-top: 5%;
   color: white;
 }
 
@@ -190,7 +187,7 @@ footer a {
   width: 80%;
   max-width: 800px;
   
-  margin: 0 auto 5%;
+  margin: 0 auto 15%;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
