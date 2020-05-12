@@ -15,28 +15,28 @@ db.serialize(function () {
     );
   `)
 
-  // Insere dado na tabela
-  const query = `
-     INSERT INTO ideas(
-       image,
-       title,
-       category,
-       description,
-       link
-     ) VALUES (?,?,?,?,?);
-  `
-  const values = [
-    "https://image.flaticon.com/icons/svg/2729/2729007.svg",
-    "Curso de Programação",
-    "Estudo",
-    "Lorem ispum",
-    "https://rocketseat.com.br"
-  ]
+  // // Insere dado na tabela
+  // const query = `
+  //    INSERT INTO ideas(
+  //      image,
+  //      title,
+  //      category,
+  //      description,
+  //      link
+  //    ) VALUES (?,?,?,?,?);
+  // `
+  // const values = [
+  //   "https://image.flaticon.com/icons/svg/2729/2729007.svg",
+  //   "Curso de Programação",
+  //   "Estudo",
+  //   "Lorem ispum",
+  //   "https://rocketseat.com.br"
+  // ]
 
-  db.run(query, values, function (err) {
-    if (err) return console.log(err)
-    console.log(this)
-  })
+  // db.run(query, values, function (err) {
+  //   if (err) return console.log(err)
+  //   console.log(this)
+  // })
 
   // Deleta um dado da tabela
   //db.run(`DELETE FROM ideas WHERE id = ?`, [1], function(err) {
